@@ -1,4 +1,6 @@
   
+FROM tomcat:8
+from postgresqlaas/docker-postgresql-9.6
 FROM ajit5144/ubuntu-tomcat-psql-new
 
 CMD "service tomcat8 start"
