@@ -1,5 +1,5 @@
   
-FROM ajit5144/ubuntu-tomcat-psql
+FROM ajit5144/ubuntu-tomcat-psql-new
 
 CMD "service tomcat8 start"
 CMD "service postgresql start"
