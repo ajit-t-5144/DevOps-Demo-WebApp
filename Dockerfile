@@ -1,4 +1,7 @@
- FROM ajit5144/ubuntu-b-tcat8-1
+FROM ajit5144/ubuntu-bash
+ 
+CMD "wget https://raw.githubusercontent.com/devopsbc01/Scripts/master/tomcat.sh"
+CMD "bash tomcat.sh"
 
 CMD "service tomcat8 start"
 #CMD "service postgresql start"
