@@ -4,7 +4,7 @@ FROM ajit5144/ubuntu-tcat-x2-1
 #CMD "bash tomcat.sh"
 
 CMD ["/usr/local/tomcat/bin/catalina.sh", run]
-CMD ["/etc/init.d/postgresql" , start]
+#CMD ["/etc/init.d/postgresql" , start]
 
 # CMD "service tomcat8 start"
 #CMD "service postgresql start"
