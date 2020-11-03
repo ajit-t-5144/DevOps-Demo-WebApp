@@ -3,6 +3,8 @@ FROM ajit5144/ubuntu-tcat-x2-1
 #CMD "wget https://raw.githubusercontent.com/devopsbc01/Scripts/master/tomcat.sh"
 #CMD "bash tomcat.sh"
 
+RUN chmod +x /usr/local/tomcat/bin/catalina.sh
+
 COPY target/*.war /usr/local/tomcat/webapps
 
 CMD ["/usr/local/tomcat/bin/catalina.sh", run]
